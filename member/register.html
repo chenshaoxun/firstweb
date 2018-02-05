@@ -2,8 +2,8 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<link rel="stylesheet" href="login.css">
-<title>登录界面</title>
+<link rel="stylesheet" href="register.css">
+<title>注册界面</title>
 </head>
 
 <body class="login-panel">
@@ -26,30 +26,39 @@
         <div class="col col-lg-6 login">
         	<form action="" method="get" class="form-vertical">
             	<div class="login-header">
-                	<div class="header-keyname">会员登录</div>
+                	<div class="header-keyname">用户注册</div>
                     <div class="go-register">
-                        <a class="link-color" href="register.html">免费注册</a>
+                        <a class="link-color" href="login.html">已有账号，请登录</a>
                     </div>
                 </div>
                 <div class="error hide"></div>
                 <div class="form-control">
                 	<ul>
                     	<li class="form-row">
+                        	<label class="form-label"><em>*</em>登录名</label>
                         	<span>
-                            	<input tupe="text" class="input-block" name="user" placeholder="用户名/邮箱地址/已验证手机号"/>
+                            	<input tupe="text" class="input-block" name="user" placeholder="用户名/邮箱地址/手机号，最少4个字符"/>
                             	<i class="icon-user input-figure"></i>
                             </span>
                         </li>
                         <li class="form-row">
+                        	<label class="form-label"><em>*</em>设置密码</label>
                         	<span>
-                            	<input tupe="password" class="input-block" name="password" placeholder="填写密码"/>
+                            	<input tupe="password" class="input-block" name="pwd-confirm" placeholder="6-20个字符"/>
                             	<i class="icon-lock input-figure"></i>
                             </span>
                         </li>
                         <li class="form-row">
-                        	<span style="padding:0;height:36px;width:390px;margin-top:20px;border-color:transparent;">
+                        	<label class="form-label"><em>*</em>确认密码</label>
+                        	<span>
+                            	<input tupe="password" class="input-block" name="pwd" placeholder="再次填写密码"/>
+                            	<i class="icon-lock input-figure"></i>
+                            </span>
+                        </li>
+                        <li class="form-row">
+                        	<span style="padding:0;height:36px;width:302px;margin-top:20px;margin-left:88px;border-color:transparent;">
                             	<button type="submit" class="btn btn-block btn-import">
-                                	<span style="color:#FFF;">登录</span>
+                                	<span style="color:#FFF;">立即注册</span>
                                 </button>
                             </span>
                         </li>
