@@ -1,5 +1,5 @@
 @charset "utf-8";
-/* CSS Document */
+/* ---------------CSS Document--------------- */
 * {
 	margin: 0;
 	padding: 0;
@@ -72,7 +72,8 @@ a:link{text-decoration: none;}
     position: relative;
     background-color: hsla(0,0%,100%,0);
     transition: all .3s;}
-.nav-item .t{padding:0 11px;color:#fff;}
+.nav-item .t{padding:0 11px;color:#fff;height:42px;display:block;line-height:42px;}
+.nav-left .nav-item .t{float:left;}
 input {outline:none;/*边框点击不变色*/}
 .formr{float:right;margin-top:2px;}
 .nav-menu .text{
@@ -91,7 +92,7 @@ input {outline:none;/*边框点击不变色*/}
 	background:url(imges/search.png) no-repeat;
 	background-size:cover;}
 
-/*菜单栏*/
+/*---------------菜单栏---------------*/
 .wrapper{margin: 0 auto;width: 1160px;}
 .wrapper .nav-menu{color:#000;position:relative;z-index: 200;height:42px;}	
 .wrapper .nav-item{width:140px;}
@@ -99,15 +100,36 @@ input {outline:none;/*边框点击不变色*/}
 .wrapper .nav-menu .category:hover{background-color:#e3e3e3;color:#fff;}
 .wrapper .all-category a{color:#fff;}
 .all-category{background-color:#69F;}
-.sub-nav{display:none;background-color: rgba(227,227,227,0.6);}
+.sub-nav{display:none;background-color: rgba(227,227,227,0.8);
+text-align:center;}
+.submenu{
+    position: absolute;
+    top: 42px;
+    left: 140px;
+    width: 610px;
+    height: 420px;
+    background-color: #e3e3e3;
+    z-index: 3;
+    display: none;
+	opacity:0.9;
+}
+.submenu-menu{width: 140px; height: 420px;}
+.submenu-img{width:470px;height:420px;}
+.submenu-menu,.submenu-img{float:left;}
+.sub-nav-item{height:60px;line-height:60px;}
+dl,dt,dd{width:140px;height:60px;}
+.wrapper .sub-nav-item .submenu dl:hover{background-color:rgba(102,153,255,0.8);color:#fff;}
+.wrapper .sub-nav-item .submenu dl:hover a{color:#fff;}
+.wrapper .sub-nav-item .submenu a{color:#000;}
 .wrapper .all-category:hover .sub-nav{display:block;}
+.wrapper .sub-nav-item:hover .submenu{display:block;}
 .sub-nav-item:hover{background-color:rgba(102,153,255,0.8);color:#fff;}
 .page-body{
 	/*background-image:url(imges/1516334263281.jpg);*/
 	background-size:1920px 1080px;
 	background-repeat:no-repeat;
 	background-attachment:fixed}
-/*轮播区*/
+/*---------------轮播区---------------*/
 .container-top-wrapper{width:1160px;height:480px;margin:0 auto;}
 .container-top-wrapper .banner-slide{width:1160px;height:480px;margin:0 auto;}
 .container-top-wrapper>div{float:left;}
@@ -130,7 +152,7 @@ input {outline:none;/*边框点击不变色*/}
 }
 
 .model,.ornament{width:1190px;height:820px;margin-bottom:20px}
-/*详情区*/
+/*---------------详情区---------------*/
 
 .container-row{
 	margin-top:42px;
@@ -159,7 +181,7 @@ input {outline:none;/*边框点击不变色*/}
     text-align: center;}
 	
 	
-/*页尾*/
+/*---------------页尾---------------*/
 .footer{width:100%;height:300px;background:#bbb;margin-top:60px;}
 .footer-wrapper{
 	padding: 30px 0;
