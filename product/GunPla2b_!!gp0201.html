@@ -1,0 +1,327 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script src="../jquery.min.js" type="text/javascript"></script>
+<script src="../index.js" type="text/javascript"></script>
+<title>商品详情</title>
+<link rel="stylesheet" href="detail.css">
+<link rel="stylesheet" href="../style.css">
+<link rel="stylesheet" href="shouye.css">
+<script>
+$(document).ready(function(){
+	var $miaobian=$('.Xcontent08>div');
+	var $huantu=$('.Xcontent06>img');
+	var $miaobian1=$('.Xcontent26>div');
+	$miaobian.mousemove(function(){miaobian(this);});
+	$miaobian1.click(function(){miaobian1(this);});
+	function miaobian(thisMb){
+		for(var i=0; i<$miaobian.length; i++){
+			$miaobian[i].style.borderColor = '#dedede';
+		}
+		thisMb.style.borderColor = '#cd2426';
+	
+		$huantu[0].src = thisMb.children[0].src;
+	}
+	function miaobian1(thisMb1){
+		for(var i=0; i<$miaobian1.length; i++){
+			$miaobian1[i].style.borderColor = '#dedede';
+		}
+	//		thisMb.style.borderColor = '#cd2426';
+		$miaobian.css('border-color','#dedede');
+		thisMb1.style.borderColor = '#cd2426';
+		$huantu[0].src = thisMb1.children[0].src;
+	}
+			$(".Xcontent33").click(function(){
+			var value=parseInt($('.input').val())+1;
+			$('.input').val(value);
+		})
+	
+		$(".Xcontent32").click(function(){	
+			var num = $(".input").val()
+			if(num>0){
+				$(".input").val(num-1);
+			}			
+			
+		})
+})
+</script>
+</head>
+
+<body>
+<div>
+    	<!--头部-->
+	<div class="header">
+    	<!--导航栏-->
+    	<div class="nav-menu">
+        	<div class="nav-bg" style="background-image:url(../imges/banner.png)"></div>
+            <div class="nav-mask"></div>
+            <!--导航栏菜单-->
+            <div class="nav-wrapper">
+            	<div class="nav-left fl">
+                	<ul>
+                    	<li class="nav-item ">
+                        	<a class="t">欢迎光临</a>
+                            <a href="../index.html" ><img src="../imges/logo.png" style="width:105px;"/></a>
+                        </li>
+                        <li class="nav-item login">
+                        	<a href="../member/login.html" class="t">[请登录]</a>
+                        </li>
+                        <li class="nav-item register">
+                        	<a href="../member/register.html" class="t">[免费注册]</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="nav-midden fr"></div>
+                <div class="nav-right fr">
+                	<ul class="fr">
+                    	<li class="nav-item ">
+                        	<a href="#" class="t">M订单</a>
+                        </li>
+                        <li class="nav-item">
+                        	<a href="#" class="t">M收藏</a>
+                        </li>
+                        <li class="nav-item">
+                        	<a href="#" class="t">M购物车</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!--banner-->
+        <div class="banner"></div>
+        <!--菜单栏-->
+        <div class="wrapper">
+        	<ul class="nav-menu">
+            	<li class="nav-item all-category">
+                	<a>全部分类</a>
+                    <ul class="sub-nav">
+                    	<li class="sub-nav-item">手办模型
+                        	<div class="submenu">
+                            	<div class="submenu-menu">
+                                	<dl><a href="../list/list.html">粘土人</a></dl>
+                                    <dl><a href="../list/list.html">高达模型</a></dl>
+                                    <dl><a href="../list/list.html">纸模</a></dl>
+                                    <dl><a href="../list/list.html">动漫公仔</a></dl>
+                                    <dl><a href="../list/list.html">景品摆件</a></dl>
+                                </div>
+                                <div class="submenu-img">
+                                	<img src="../imges/model.png">
+                                </div>
+                            </div>
+                        </li>
+                        <li class="sub-nav-item">动漫饰品
+                        	<div class="submenu">
+                            	<div class="submenu-menu">
+                                    <dl><a href="../list/list.html">胸针徽章</a></dl>
+                                    <dl><a href="../list/list.html">项链</a></dl>
+                                    <dl><a href="../list/list.html">钥匙扣</a></dl>
+                                    <dl><a href="../list/list.html">挂件</a></dl>
+                                    <dl><a href="../list/list.html">手链/手镯</a></dl>
+                                </div>
+                                <div class="submenu-img">
+                                	<img src="../imges/decorations.png">
+                                </div>
+                            </div>
+                        </li>
+                        <li class="sub-nav-item">文具箱包
+                        	<div class="submenu">
+                            	<div class="submenu-menu">
+                                    <dl><a href="../list/list.html">书签/贴纸</a></dl>
+                                    <dl><a href="../list/list.html">笔记本</a></dl>
+                                    <dl><a href="../list/list.html">笔袋/文具盒</a></dl>
+                                    <dl><a href="../list/list.html">明信片</a></dl>
+                                    <dl><a href="../list/list.html">钱包</a></dl>
+                                    <dl><a href="../list/list.html">背包/提袋</a></dl>
+                                </div>
+                                <div class="submenu-img">
+                                	<img src="../imges/stationery.png">
+                                </div>
+                            </div>
+                        </li>
+                        <li class="sub-nav-item">衣着装备
+                        	<div class="submenu">
+                            	<div class="submenu-menu">
+                                    <dl><a href="../list/list.html">上衣</a></dl>
+                                    <dl><a href="../list/list.html">下装</a></dl>
+                                    <dl><a href="../list/list.html">抱枕</a></dl>
+                                    <dl><a href="../list/list.html">手表</a></dl>
+                                    <dl><a href="../list/list.html">雨伞</a></dl>
+                                    <dl><a href="../list/list.html">鼠标垫</a></dl>
+                                </div>
+                                <div class="submenu-img">
+                                	<img src="../imges/clothes.png">
+                                </div>
+                            </div>
+                        </li>
+                        <li class="sub-nav-item">桌游，玩具
+                        	<div class="submenu">
+                            	<div class="submenu-menu">
+                                    <dl><a href="../list/list.html">桌游卡牌</a></dl>
+                                    <dl><a href="../list/list.html">扑克牌</a></dl>
+                                    <dl><a href="../list/list.html">盒蛋/扭蛋</a></dl>
+                                    <dl><a href="../list/list.html">人偶/摆件</a></dl>
+                                </div>
+                                <div class="submenu-img">
+                                	<img src="../imges/card.png">
+                                </div>
+                            </div>
+                        </li>
+                        <li class="sub-nav-item">游戏
+                        	<div class="submenu">
+                            	<div class="submenu-menu">
+                                    <dl><a href="../list/list.html">益智游戏</a></dl>
+                                    <dl><a href="../list/list.html">策略游戏</a></dl>
+                                    <dl><a href="../list/list.html">动作游戏</a></dl>
+                                    <dl><a href="../list/list.html">塔防游戏</a></dl>
+                                    <dl><a href="../list/list.html">卡牌游戏</a></dl>
+                                </div>
+                                <div class="submenu-img">
+                                	<img src="../imges/game.png">
+                                </div>
+                            </div>
+                        </li>
+                        <li class="sub-nav-item">漫画连载
+                        	<div class="submenu">
+                            	<div class="submenu-menu">
+                                    <dl><a href="../list/list.html">搞笑</a></dl>
+                                    <dl><a href="../list/list.html">魔幻</a></dl>
+                                    <dl><a href="../list/list.html">科技</a></dl>
+                                    <dl><a href="../list/list.html">战争</a></dl>
+                                    <dl><a href="../list/list.html">同人</a></dl>
+                                </div>
+                                <div class="submenu-img">
+                                	<img src="../imges/cartoon.png">
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </li>
+                <li class="nav-item category"><a href="../index.html" class="c">首页</a></li>
+                <li class="nav-item category"><a href="#" class="c">新品上架</a></li>
+                <li class="nav-item category"><a href="#" class="c">热销产品</a></li>
+                <li class="nav-item category"><a href="#" class="c">店铺加盟</a></li>
+                <div>
+                    <form method="get" action="">
+                        <div><input class="submit formr" type="submit" value=""></div>
+                        <div><input class="text formr" type="text" name="select" value=" 请输入您要搜索的商品关键字" style="color: rgb(153, 153, 153);" autocomplete="off"></div>
+                    </form>
+                </div>
+            </ul>
+        </div>
+    </div>
+    <!--商品详情-->
+    <div class="main">
+    	<div class="wrap-sp">
+        	<div class="bread-nav">
+            	<a href="#">手办模型</a><span>&gt;</span><a href="#">高达模型</a><span>&gt;</span><span>万代高达模型1/100 MG敢达创战者FENICE重生新生再生凤凰飞翼敢达</span>
+            </div>
+            <div class="Xcontent">
+            	<form action="" method="get">
+                <ul class="Xcontent01">
+                    <div class="Xcontent06"><img src="../imges/models/gunpla/GunPla2b_!!gp0201.jpg"></div>
+                    <ol class="Xcontent08">
+                        <div class="Xcontent07"><img src="../imges/models/gunpla/GunPla2b_!!gp0201.jpg"></div>
+                        <div class="Xcontent09"><img src="../imges/models/gunpla/GunPla2b_!!gp0202.jpg"></div>
+                        <div class="Xcontent10"><img src="../imges/models/gunpla/GunPla2b_!!gp0203.jpg"></div>
+                        <div class="Xcontent11"><img src="../imges/models/gunpla/GunPla2b_!!gp0204.jpg"></div>
+                        <div class="Xcontent12"><img src="../imges/models/gunpla/GunPla2b_!!gp0205.jpg"></div>
+                    </ol>
+                    <ol class="Xcontent13">
+                        <div class="Xcontent14"><a href="#"><p>万代高达模型1/100 MG敢达创战者FENICE重生新生再生凤凰飞翼敢达</p></a></div>
+                        <div class="Xcontent15"><img src="../imges/X11.png"></div>
+                        <div class="Xcontent16"><p></p></div>
+                        <div class="Xcontent17">
+                            <p class="Xcontent18">售价</p>
+                            <p class="Xcontent19">￥<span>229.00</span></p>
+                            <div class="Xcontent20">
+                                <p class="Xcontent21">促销</p>
+                                <img src="../imges/X12.png">
+                                <p class="Xcontent22">领610元新年礼券，满再赠好礼</p>
+                            </div>
+                            <div class="Xcontent23">
+                                <p class="Xcontent24">服务</p>
+                                <p class="Xcontent25">30天无忧退货&nbsp;&nbsp;&nbsp;&nbsp;       48小时快速退款 &nbsp;&nbsp;&nbsp;&nbsp;        满88元免邮</p>
+                            </div>
+                            
+                        </div>
+                        <div class="Xcontent26">
+                            <p class="Xcontent27">颜色</p>
+                            <div class="Xcontent28"><img  src="../imges/models/gunpla/GunPla2b_!!gp0201.jpg"></div>
+                        </div>
+                        <div class="Xcontent30">
+                            <p class="Xcontent31">数量</p>
+                            <div class="Xcontent32"><img src="../imges/X15.png"></div>
+                            <input type="text" class="input" value="1">
+                            <div class="Xcontent33"><img src="../imges/16.png"></div>
+                        </div>
+                        <div class="Xcontent34"><a href="#"><img src="../imges/X17.png"></a></div>
+                        <div class="Xcontent35"><a href="#"><img src="../imges/X18.png"></a></div>
+                    </ol>
+                </ul>
+                </form>
+            </div>
+            <div class="Xdetail">
+            	<div class="left-detail adetail">商品搜索</div>
+            	<div class="right-detail adetail">
+                	<img src="../imges/models/gunpla/GunPla2b_!!gp0206.jpg"/>
+                </div>
+            </div>
+            <div style="clear:both;"></div>
+        </div>
+    </div>
+    <!--页尾-->
+    <div class="footer">
+   		<div class="footer-wrapper">
+        <div style="height:135px">
+            <div class='info-block'>
+                <strong>消费者保障</strong>
+                <div class="info-text">
+                    <div><a href="#">保障范围</a></div>
+                    <div><a href="#">退换货流程</a></div>
+                    <div><a href="#">服务中心</a></div>
+                </div>
+            </div> 
+            <div class='info-block'>
+                <strong>新手上路</strong>
+                <div class="info-text">
+                    <div><a href="#">购买流程</a></div>
+                    <div><a href="#">顾客必读</a></div>
+                    <div><a href="#">联系客服</a></div>
+                </div>
+            </div> 
+            <div class='info-block'>
+                <strong>购物指南</strong>
+                <div class="info-text">
+                    <div><a href="#">订单状态</a></div>
+                    <div><a href="#">关于出货</a></div>
+                    <div><a href="#">售后服务</a></div>
+                </div>
+            </div> 
+            <div class='info-block'>
+                <strong>支付/配送</strong>
+                <div class="info-text">
+                    <div><a href="#">配送方式</a></div>
+                    <div><a href="#">关于送货和验货</a></div>
+                    <div><a href="#">支付方式</a></div>
+                </div>
+            </div> 
+            <div class='info-block'>
+                <strong>购物条款</strong>
+                <div class="info-text">
+                    <div><a href="#">网站使用条款</a></div>
+                    <div><a href="#">隐私保护政策</a></div>
+                    <div><a href="#">会员注册协议</a></div>
+                </div>
+            </div> 
+        </div>
+        </div>
+        <div class="footer2 ">
+        	有任何购物问题请联系我们在线客服 | 电话：0768-xxxxxxxx | 工作时间：周一至周五 09:30－18:00 
+			<p>©2017 XXX信息技术有限公司 xxxx.com 版权所有</p>
+            <div style="text-align: center;">粤ICP备xxxxxxxx号</div>
+        </div> 
+    </div>
+</div>
+</body>
+</html>
