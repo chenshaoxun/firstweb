@@ -161,6 +161,7 @@ dl,dt,dd{width:140px;height:60px;}
 .container-title{width: 1160px;height:40px;padding: 18px 0 0 18px;}
 .container-title div{float:left;}	
 .md-scope{height:40px;line-height:40px;text-align:center;}
+.goods-pic img{width:280px;}
 .container-title .md-dd{font-size:20px;padding-left:10px}
 .container-title .md-a a{color:#888;font-size:14px;}	
 .container-title .md-a{float:right;padding-right:20px;}
