@@ -30,7 +30,7 @@ a:link{text-decoration: none;}
 	/*background-image:url(imges/1516343335740.jpg);*/
 	background-attachment:fixed;
 	background-repeat:no-repeat;background-position:center ;}
-.header{width:100%;}
+.header{width:100%;margin: 0 auto;}
 .nav-menu{position:relative;z-index: 200;height:42px;}
 .banner{
 	margin-top:-42px;
